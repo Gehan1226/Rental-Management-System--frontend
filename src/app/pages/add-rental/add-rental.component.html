@@ -1,1 +1,38 @@
-<p>add-rental works!</p>
+
+<div class="container mt-5">
+
+    <div class="row">
+        <h1 class="text-center">Add Rental</h1>
+
+        <div class="col mt-5">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Rental Date</span>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1"
+                    [(ngModel)]="rental.rentalDate">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Return Date</span>
+                <input type="text" class="form-control" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2" [(ngModel)]="rental.returndate">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Due Date</span>
+                <input type="text" class="form-control" [(ngModel)]="rental.dueDate">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">Total Cost</span>
+                <input type="text" class="form-control" [(ngModel)]="rental.totalCost">
+            </div>
+
+            <div class="text-center">
+                <button type="button" class="btn btn-secondary mt-5" (click)="addRental()">Add Customer</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
