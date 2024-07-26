@@ -1,0 +1,25 @@
+<div class="container">
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>Id</th>
+                <th>Rental Date</th>
+                <th>Return Date</th>
+                <th>Due Date</th>
+                <th>Total Cost</th>
+            </tr>
+
+        </thead>
+        <tbody class="text-center">
+            <tr *ngFor="let rental of rentalList">
+                <td>{{rental.id}}</td>
+                <td>{{rental.rentalDate}}</td>
+                <td>{{rental.returndate}}</td>
+                <td>{{rental.dueDate}}</td>
+                <td>{{rental.totalCost}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

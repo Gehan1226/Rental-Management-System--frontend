@@ -5,11 +5,12 @@ import { ViewAllCustomersComponent } from "./pages/view-all-customers/view-all-c
 import { AddItemComponent } from "./pages/add-item/add-item.component";
 import { AddRentalComponent } from "./pages/add-rental/add-rental.component";
 import { ViewAllItemComponent } from "./pages/view-all-item/view-all-item.component";
+import { UpdateItemComponent } from "./pages/update-item/update-item.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AddCustomerComponent, ViewAllCustomersComponent, AddItemComponent, AddRentalComponent, ViewAllItemComponent],
+  imports: [RouterOutlet, AddCustomerComponent, ViewAllCustomersComponent, AddItemComponent, AddRentalComponent, ViewAllItemComponent, UpdateItemComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
